@@ -103,10 +103,14 @@ class CourseListView(generic.ListView):
 
     def get_queryset(self):
         user = self.request.user
-        courses = Course.objects.order_by('-total_enrollment')[:10]
+        courses = Course.objects.all()
         for course in courses:
             if user.is_authenticated:
                 course.is_enrolled = check_if_enrolled(user, course)
+            course_enrollments = Enrollment.objects.filter(
+                course=course).count()
+            course.total_enrollment = course_enrollments
+            courses.order_by('-total_enrollment')[:10]
         return courses
 
 
@@ -136,7 +140,7 @@ def enroll(request, course_id):
     if not is_enrolled and user.is_authenticated:
         # Create an enrollment
         Enrollment.objects.create(user=user, course=course, mode='honor')
-        course.total_enrollment += 1
+        # course.total_enrollment += 1
         course.save()
 
     return HttpResponseRedirect(reverse(viewname='onlinecourse:course_details', args=(course.id,)))
