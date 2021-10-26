@@ -3,9 +3,9 @@
     routes:
       - route: apic.us-east.mybluemix.net
     memory: 128M
-    buildpack: python_buildpack
+    buildpacks: python_buildpack
   - name: onlinecourse-nginx
     routes:
       - route: apic.us-east.mybluemix.net/static
     memory: 128M
-    buildpack: staticfile_buildpack
+    buildpacks: staticfile_buildpack
