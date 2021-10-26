@@ -1,0 +1,32 @@
+[
+    {
+        "first_name": "James",
+        "last_name": "Smith",
+        "occupation": "data_scientist",
+        "social_link": "https://www.facebook.com/james/"
+    },
+    {
+        "first_name": "Paige",
+        "last_name": "Weeky",
+        "occupation": "developer",
+        "social_link": "https://www.facebook.com/paige/"
+    },
+    {
+        "first_name": "Dmitry",
+        "last_name": "Antipov",
+        "occupation": "developer",
+        "social_link": "https://www.facebook.com/dima/"
+    },
+    {
+        "first_name": "Eric",
+        "last_name": "Cartman",
+        "occupation": "student",
+        "social_link": "https://www.facebook.com/eric/"
+    },
+    {
+        "first_name": "Peter",
+        "last_name": "Pen",
+        "occupation": "dba",
+        "social_link": "https://www.facebook.com/peter/"
+    }
+]

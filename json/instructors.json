@@ -1,0 +1,44 @@
+[
+    {
+        "first_name": "Charles",
+        "last_name": "Severence",
+        "dob": "16.07.1962",
+        "full_time": 0,
+        "total_learners": 30050
+    },
+    {
+        "first_name": "Ludmila",
+        "last_name": "Strikeleva",
+        "dob": "11.08.1968",
+        "full_time": 1,
+        "total_learners": 10020
+    },
+    {
+        "first_name": "Alexsander",
+        "last_name": "Kamenev",
+        "dob": "14.10.1955",
+        "full_time": 0,
+        "total_learners": 15
+    },
+    {
+        "first_name": "Yuri",
+        "last_name": "Vorotnitsky",
+        "dob": "26.04.1961",
+        "full_time": 1,
+        "total_learners": 110135
+    },
+    {
+        "first_name": "Sergei",
+        "last_name": "Lisinetsky",
+        "dob": "3.02.1979",
+        "full_time": 1,
+        "total_learners": 500100
+    },
+    {
+        "first_name": "Olga",
+        "last_name": "Fedorova",
+        "dob": "8.08.1952",
+        "full_time": 0,
+        "total_learners": 25001
+    }
+]

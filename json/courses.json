@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Cloud Application Development with Database",
+        "description": "Develop and deploy application on cloud"
+    },
+    {
+        "name": "Introduction to Python",
+        "description": "Learn core concepts of Python and obtain hands-on experience via a capstone project"
+    },
+    {
+        "name": "Django for Everybody",
+        "description": "Django REST framework and Django ORM to create full stack web applications."
+    }
+]
