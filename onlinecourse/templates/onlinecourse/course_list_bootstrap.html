@@ -11,7 +11,7 @@
                 <div class="card-body bg-light">
                     <h5 class="card-title">
                         <a href="{% url 'onlinecourse:course_details' course.pk %}">{{ course.name }}</a>, 
-                        <span class="text-success">{{ course.enrollment_set.count}} enrolled </span>
+                        <span class="text-success">{{ course.enrollment_set.count }} enrolled </span>
                     </h5>
                     <p class="card-text">{{ course.description}}</p>
                     {% if request.user.is_authenticated %}

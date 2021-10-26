@@ -109,8 +109,9 @@ class CourseListView(generic.ListView):
                 course.is_enrolled = check_if_enrolled(user, course)
             course_enrollments = Enrollment.objects.filter(
                 course=course).count()
+            # updating total course enrollments for actual participants
             course.total_enrollment = course_enrollments
-            courses.order_by('-total_enrollment')[:10]
+        courses.order_by('-total_enrollment')[:10]
         return courses
 
 
