@@ -30,7 +30,11 @@ SECRET_KEY = env.str('SECRET_KEY')
 DEBUG = env.bool('DEBUG')
 
 # <HINT> add your cloud host here
-ALLOWED_HOSTS = ['apic.us-east.mybluemix.net']
+ALLOWED_HOSTS = [
+    'apic.us-east.mybluemix.net', 
+    'apic.us-east.cf.appdomain.cloud',
+    '127.0.0.1'
+    ]
 
 
 # Application definition
