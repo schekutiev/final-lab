@@ -31,7 +31,7 @@ def clean_data():
 
 def populate_users():
     # Load Users
-    filepath = os.getcwd() + '\\json\\users.json'
+    filepath = os.getcwd() + '/json/users.json'
     with open(filepath, 'rt') as fh:
         users = json.load(fh)
     
@@ -48,7 +48,7 @@ def populate_users():
     
     
 def populate_instructors():
-    filepath = os.getcwd() + '\\json\\instructors.json'
+    filepath = os.getcwd() + '/json/instructors.json'
     # Load Instructors
     with open(filepath, 'rt') as fh:
         instructors = json.load(fh)
@@ -70,7 +70,7 @@ def populate_instructors():
 
 def populate_learners():
     # Load Learners
-    filepath = os.getcwd() + '\\json\\learners.json'
+    filepath = os.getcwd() + '/json/learners.json'
     with open(filepath, 'rt') as fh:
         learners = json.load(fh)
     
@@ -89,7 +89,7 @@ def populate_learners():
     print('Learner objects all saved... ')
 
 def populate_courses():
-    filepath = os.getcwd() + '\\json\\courses.json'
+    filepath = os.getcwd() + '/json/courses.json'
     # Load Courses
     with open(filepath, 'rt') as fh:
         courses = json.load(fh)
@@ -103,7 +103,7 @@ def populate_courses():
     print('Course objects all saved... ')
 
 def populate_lessons():
-    filepath = os.getcwd() + '\\json\\lessons.json'
+    filepath = os.getcwd() + '/json/lessons.json'
     # Load Lessons
     with open(filepath, 'rt') as fh:
         lessons = json.load(fh)
