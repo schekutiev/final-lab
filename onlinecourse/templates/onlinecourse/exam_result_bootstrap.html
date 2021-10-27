@@ -1,6 +1,6 @@
 {% extends "onlinecourse/base.html" %} 
 {% load static %}
-
+<title>{% block title %} Exam results {% endblock title %}</title>
 {% block content %}
     {% if grade > 80 %}
     <div class="alert alert-success">

@@ -1,5 +1,6 @@
 {% extends "onlinecourse/base.html" %} 
 {% load static %}
+<title>{% block title %} Course list {% endblock title %}</title>
 {% block nav-ibm %}<li class="nav-link active" ><a href="{% url 'onlinecourse:index' %}" title="Index">Index</a></li>{% endblock %}
 
 {% block content %}
