@@ -142,7 +142,7 @@ def enroll(request, course_id):
         # Create an enrollment
         Enrollment.objects.create(user=user, course=course, mode='honor')
         # course.total_enrollment += 1
-        course.save()
+        # course.save()
 
     return HttpResponseRedirect(reverse(viewname='onlinecourse:course_details', args=(course.id,)))
 
