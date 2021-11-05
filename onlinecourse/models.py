@@ -54,7 +54,7 @@ class Learner(models.Model):
 
 # Course model
 class Course(models.Model):
-    name = models.CharField(null=False, max_length=30, default='online course')
+    name = models.CharField(null=False, max_length=70, default='online course')
     image = models.ImageField(upload_to='course_images/', default='default.jpg')
     description = models.CharField(max_length=1000)
     pub_date = models.DateField(null=True)
@@ -135,7 +135,7 @@ class Question(models.Model):
     # Other fields and methods you would like to design
 class Choice(models.Model):
     questions = models.ManyToManyField(Question)
-    text = models.CharField(max_length=100)
+    text = models.CharField(max_length=120)
     is_correct = models.BooleanField(default=False)
 
     def __str__(self) -> str:
